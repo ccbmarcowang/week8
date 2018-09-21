@@ -1,0 +1,13 @@
+
+{% for user in users %}
+    <h1> ID : {{ user.id }} </h1>
+    <h1> Username: {{ user.username}} </h1>
+    <h1>
+         Published courses:
+     </h1>
+         {% for course in user.publish_courses %}
+         <div>
+         	{{course.name}}
+         </div>
+         {% endfor %}
+{% endfor %}
